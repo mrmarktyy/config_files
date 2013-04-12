@@ -8,6 +8,9 @@ fi
 PATH=$PATH:$HOME/bin
 export PATH
 
+#color schema for MacOSX terminal
+export CLICOLOR=1
+
 #  Note that a variable may require special treatment
 #+ if it will be exported.
 
@@ -41,8 +44,7 @@ echo \$T \`"
 
 PS1="\`if [[ \$EUID -eq 0 ]]; then PCT='$LIGHTRED';
 else PCT='$LIGHTBLUE'; fi; 
-echo '$GREEN[\w] \n'\$PCT'[$DARKGRAY('\$PCT'\t$DARKGRAY)-\
-('\$PCT'\u$DARKGRAY)'\$PCT']$ $NC'\`"
+echo '$GREEN[\w] \n'\$PCT'[$DARGRAY('\$PCT'\h$DARGRAY)-('\$PCT'\u$DARKGRAY)'\$PCT']$ $NC'\`"
 
 # The trick is to use strong quoting for parts of old PS1 variable.
 
