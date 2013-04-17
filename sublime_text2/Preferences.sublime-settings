@@ -1,0 +1,8 @@
+{
+	"theme": "Soda Dark.sublime-theme",
+	"soda_classic_tabs": true,
+	"auto_complete_commit_on_tab": true,
+ 	"translate_tabs_to_spaces": true,
+    "shift_tab_unindent": false,
+    "open_files_in_new_window": false
+}

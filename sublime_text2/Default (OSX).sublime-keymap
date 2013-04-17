@@ -1,0 +1,6 @@
+[
+ 	{	"keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+ 	{ 	"keys": ["ctrl+super+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+	{ 	"keys": ["ctrl+super+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+    {   "keys": ["ctrl+shift+f"], "command": "reindent" , "args": {"single_line": false} }
+]
