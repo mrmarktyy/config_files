@@ -1,7 +1,11 @@
+" common settings
 set number
+set hlsearch
+set bg=dark
+set ruler
 syntax on
+
 filetype plugin indent on
-set background=dark
 
 " size of a hard tabstop
 set tabstop=4
