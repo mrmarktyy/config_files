@@ -44,7 +44,7 @@ echo \$T \`"
 
 PS1="\`if [[ \$EUID -eq 0 ]]; then PCT='$LIGHTRED';
 else PCT='$LIGHTBLUE'; fi; 
-echo '$GREEN[\w] \n'\$PCT'[$DARKGRAY('\$PCT'\h$DARKGRAY)@('\$PCT'\u$DARKGRAY)'\$PCT']$ $NC'\`"
+echo '$GREEN[\w] \n'\$PCT'[$GREEN('\$PCT'\h$GREEN)@('\$PCT'\u$GREEN)'\$PCT']$ $NC'\`"
 
 # The trick is to use strong quoting for parts of old PS1 variable.
 
