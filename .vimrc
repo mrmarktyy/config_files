@@ -3,9 +3,10 @@ set number
 set hlsearch
 set bg=dark
 set ruler
+set smartindent
 syntax on
 
-filetype plugin indent on
+" filetype plugin indent on
 
 " size of a hard tabstop
 set tabstop=4
