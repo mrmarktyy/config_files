@@ -85,7 +85,7 @@ set smartindent
 " Enable syntax highlighting
 syntax enable
 
-colorscheme desert
+"colorscheme desert
 set bg=dark
 
 " Set extra options when running in GUI mode
