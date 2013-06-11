@@ -1,14 +1,48 @@
+set nocompatible
+filetype off
+
+" Use Vundle to manage plugins
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Bundles
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Configure Bundles (plugins)
+" Brief help
+" :BundleList - list configured bundles
+" :BundleInstall(!) - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!) - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Sets how many lines of history VIM has to remember
-set history=700
-
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
 
-" set ofu=syntaxcomplete#Complete
+" Sets how many lines of history VIM has to remember
+set history=700
+
+" Use the OS clipboard by default (on versions compiled with `+clipboard`)
+set clipboard=unnamed
+
+" Enhance command-line completion
+set wildmenu
+
+" Allow cursor keys in insert mode
+set esckeys
+
+" Allow backspace in insert mode
+set backspace=indent,eol,start
+
+" Don't add empty newlines at the end of files
+set binary
+set noeol
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -43,7 +77,6 @@ set cmdheight=2
 set hid
 
 " Configure backspace so it acts as it should act
-set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 " Ignore case when searching
@@ -81,13 +114,31 @@ set number
 " enable smart indent
 set smartindent
 
+" HighLight current line
+set cursorline
+
+" Enable mouse in all modes
+set mouse=a
+
+" Show the current mode
+set showmode
+
+" Show the filename in the window titlebar
+set title
+
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
+
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
 
-colorscheme slate
+set t_Co=256
+colorscheme badwolf
 set bg=dark
 
 " Set extra options when running in GUI mode
@@ -98,8 +149,8 @@ if has("gui_running")
     set guitablabel=%M\ %t
 endif
 
-" Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
+" Use UTF-8 without BOM
+set encoding=utf8 nobomb
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -142,7 +193,6 @@ set laststatus=2
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -150,8 +200,8 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 map 0 ^
 
 " ctrl+u move current line up
-nmap <C-u> ddkP
-vmap <C-u> ddkP
+nmap <C-u> :m--<CR>
+vmap <C-u> :m+<CR>
 
 " ctrl+d move current line down
 nmap <C-d> ddp
