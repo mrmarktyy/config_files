@@ -1,9 +1,9 @@
-set nocompatible
-filetype off
+" set nocompatible
+" filetype off
 
 " Use Vundle to manage plugins
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Bundles
