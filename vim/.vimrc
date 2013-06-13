@@ -18,6 +18,12 @@ call vundle#rc()
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+
 Bundle 'scrooloose/nerdtree.git'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
