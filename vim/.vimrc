@@ -1,9 +1,9 @@
-" set nocompatible
-" filetype off
+set nocompatible
+filetype off
 
 " Use Vundle to manage plugins
-" set rtp+=~/.vim/bundle/vundle/
-" call vundle#rc()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Bundles
@@ -17,6 +17,8 @@
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
+
+Bundle 'scrooloose/nerdtree.git'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -201,11 +203,27 @@ map 0 ^
 
 " ctrl+u move current line up
 nmap <C-u> :m--<CR>
-vmap <C-u> :m+<CR>
+" vmap <C-u> :m--<CR>
 
 " ctrl+d move current line down
-nmap <C-d> ddp
-vmap <C-d> ddp
+nmap <C-d> :m+<CR>
+" vmap <C-d> :m+<CR>
+
+" NERDTree Bindings
+nmap <C-r> :NERDTreeToggle<CR><CR>
+let NERDTreeShowHidden=1
+
+" close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" autoopen NERDTree and focus cursor in new document
+" autocmd VimEnter * NERDTree
+" autocmd VimENter * wincmd p
+
+:map , gt
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-n> :tabnew<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
