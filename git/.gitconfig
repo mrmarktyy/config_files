@@ -8,3 +8,8 @@
     df = diff --color --abbrev #--color-words
 [push]
     default = simple 
+[merge]
+    tool = opendiff
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
