@@ -1,7 +1,23 @@
 {
-	"theme": "Soda Dark.sublime-theme",
-	"soda_classic_tabs": true,
-	"auto_complete_commit_on_tab": true,
-    "shift_tab_unindent": false,
-    "open_files_in_new_window": false
+    "auto_complete_commit_on_tab": true,
+    "detect_indentation": false,
+    "font_size": 13.0,
+    "highlight_line": false,
+    "open_files_in_new_window": false,
+    "theme": "Phoenix Dark.sublime-theme",
+    "trim_trailing_white_space_on_save": true,
+    "use_tab_stops": true,
+
+    "find_selected_text": true,
+    "folder_exclude_patterns":
+    [
+        ".svn",
+        ".git",
+        ".hg",
+        "CVS",
+        "WEB-INF",
+        "errordump"
+    ],
+    "highlight_modified_tabs": true,
+    "show_full_path": true
 }
