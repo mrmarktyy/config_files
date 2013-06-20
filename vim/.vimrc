@@ -25,13 +25,14 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 
 Bundle 'scrooloose/nerdtree.git'
+Bundle 'Lokaltog/vim-powerline'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable filetype plugins
 filetype plugin on
-filetype indent on
+"filetype indent on
 
 " Sets how many lines of history VIM has to remember
 set history=700
@@ -137,8 +138,6 @@ set title
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -188,9 +187,11 @@ set tabstop=4
 set lbr
 set tw=500
 
-set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
+" Set auto indent
+set ai
+
+" Wrap lines
+set wrap 
 
 """"""""""""""""""""""""""""""
 " => Status line
@@ -200,6 +201,7 @@ set laststatus=2
 
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
@@ -216,7 +218,7 @@ nmap <C-d> :m+<CR>
 " vmap <C-d> :m+<CR>
 
 " NERDTree Bindings
-nmap <C-w> :NERDTreeToggle<CR><CR>
+nmap <C-q> :NERDTreeToggle<CR><CR>
 let NERDTreeShowHidden=1
 
 " close vim if the only window left open is a NERDTree
@@ -229,7 +231,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 :map , gt
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
-map  <C-n> :tabnew<CR>
+map  <C-t> :tabnew<CR>
+
+" normal mode shift+tab = back indent
+nmap <S-tab> <<
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

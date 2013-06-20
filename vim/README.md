@@ -17,6 +17,16 @@ $ cd ~/.vim/bundle
 $ git clone https://github.com/scrooloose/nerdtree.git
 ```
 
+## Powerline Installation
+
+[Powerline] is a utility plugin which allows you to create better-looking, more functional vim statuslines. See the screenshots below for a demonstration of the plugin's capabilities.
+
+```
+$ cd ~/.vim/bundle
+$ git clone git@github.com:Lokaltog/vim-powerline.git
+```
+
 [Vundle]:http://github.com/gmarik/vundle
 [Vim]:http://www.vim.org
 [NERD tree]:https://github.com/scrooloose/nerdtree
+[Powerline]:https://github.com/Lokaltog/vim-powerline
