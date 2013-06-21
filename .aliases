@@ -1,0 +1,5 @@
+# Dir navigation
+alias ..='cd ..'
+
+# Utilities
+alias l='ls -la'

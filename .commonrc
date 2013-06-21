@@ -1,0 +1,7 @@
+# Load things
+[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
+
+[[ -f "$HOME/.functions" ]] && source "$HOME/.functions"
+
+# Misc settings
+export EDITOR=vim
