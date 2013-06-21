@@ -16,5 +16,5 @@ Thumbs.db
 .Trashes
 
 # Sublime Text
-*.sublime-project                                                                                                                                                                                                                                                         
 *.sublime-workspace
+*.sublime-project
