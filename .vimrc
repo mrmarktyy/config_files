@@ -218,7 +218,7 @@ nmap <C-d> :m+<CR>
 " vmap <C-d> :m+<CR>
 
 " NERDTree Bindings
-nmap <C-q> :NERDTreeToggle<CR><CR>
+nmap <C-w> :NERDTreeToggle<CR><CR>
 let NERDTreeShowHidden=1
 
 " close vim if the only window left open is a NERDTree
