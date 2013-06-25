@@ -25,6 +25,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 
 Bundle 'scrooloose/nerdtree.git'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'elzr/vim-json'
 
