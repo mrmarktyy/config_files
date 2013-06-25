@@ -26,6 +26,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'elzr/vim-json'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -218,7 +219,7 @@ nmap <C-d> :m+<CR>
 " vmap <C-d> :m+<CR>
 
 " NERDTree Bindings
-nmap <C-w> :NERDTreeToggle<CR><CR>
+nmap <F4> :NERDTreeToggle<CR><CR>
 let NERDTreeShowHidden=1
 
 " close vim if the only window left open is a NERDTree
