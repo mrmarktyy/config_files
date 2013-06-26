@@ -25,16 +25,14 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 
 Bundle 'scrooloose/nerdtree.git'
-Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'elzr/vim-json'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable filetype plugins
 filetype plugin on
-"filetype indent on
+filetype indent on
 
 " Sets how many lines of history VIM has to remember
 set history=700
@@ -220,7 +218,7 @@ nmap <C-d> :m+<CR>
 " vmap <C-d> :m+<CR>
 
 " NERDTree Bindings
-nmap <F4> :NERDTreeToggle<CR><CR>
+nmap <C-w> :NERDTreeToggle<CR><CR>
 let NERDTreeShowHidden=1
 
 " close vim if the only window left open is a NERDTree
