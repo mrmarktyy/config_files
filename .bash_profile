@@ -6,7 +6,7 @@ export HISTFILESIZE=10000
 export HISTSIZE=10000
 
 # User specific environment and startup programs
-PATH=$PATH:$HOME/bin:$HOME/adt-bundle/sdk/platform-tools
+PATH=$PATH:$HOME/bin
 export PATH
 
 #color schema for MacOSX terminal
