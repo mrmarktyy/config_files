@@ -6,6 +6,7 @@
     c = commit -am
     s = status
     df = diff --color --abbrev #--color-words
+    last = diff --color --abbrev @{1}..
 [push]
     default = simple 
 [merge]
