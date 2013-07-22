@@ -1,13 +1,7 @@
 {
     "auto_complete_commit_on_tab": true,
     "detect_indentation": false,
-    "font_size": 13.0,
-    "highlight_line": false,
-    "open_files_in_new_window": false,
-    "theme": "Phoenix Dark.sublime-theme",
-    "trim_trailing_white_space_on_save": true,
-    "use_tab_stops": true,
-
+    "ensure_newline_at_eof_on_save": true,
     "find_selected_text": true,
     "folder_exclude_patterns":
     [
@@ -18,6 +12,18 @@
         "WEB-INF",
         "errordump"
     ],
+    "font_size": 13.0,
+    "highlight_line": false,
     "highlight_modified_tabs": true,
-    "show_full_path": true
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "open_files_in_new_window": false,
+    "show_full_path": true,
+    "theme": "Phoenix Dark.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "use_tab_stops": true
 }
+
