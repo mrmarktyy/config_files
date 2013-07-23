@@ -12,5 +12,5 @@ export PATH
 #color schema for MacOSX terminal
 export CLICOLOR=1
 
-# aommon junk
+# common junk
 [[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
