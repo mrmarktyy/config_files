@@ -238,6 +238,10 @@ map  <C-t> :tabnew<CR>
 " normal mode shift+tab = back indent
 nmap <S-tab> <<
 
+" move cursor up and down x lines
+:map <C-j> 10j
+:map <C-k> 10k
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
