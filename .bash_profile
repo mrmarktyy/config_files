@@ -1,6 +1,9 @@
 # Prompt
 [[ -f "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
 
+# Git AutoComplete OSX
+[[ -f "$HOME/.git-completion.bash" ]] && source "$HOME/.git-completion.bash"
+
 # Larger bash history (default is 500)
 export HISTFILESIZE=10000
 export HISTSIZE=10000
