@@ -4,6 +4,15 @@ Mark's dotfiles
 Git 
 ---
 
+**Alias**
+
+lg  = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative --color                           
+c   = commit -am 
+co  = checkout
+s   = status
+df  = diff --color --abbrev         
+last= diff --color --abbrev @{1}.. 
+
 VIM
 ---
 
@@ -11,7 +20,6 @@ VIM
 
 [Vundle] is short for _Vim bundle_ and is a [Vim] plugin manager.
 
-Setup [Vundle]
 
 ```
 $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
@@ -22,7 +30,7 @@ $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 The [NERD Tree] allows you to explore your filesystem and to open files and directories. It presents the filesystem to you in the form of a tree which you manipulate with the keyboard and/or mouse. It also allows you to perform simple filesystem operations.
 
 
-**NERD Commenter
+**NERD Commenter**
 
 [NERD Commenter], Vim plugin for intensely orgasmic commenting
 
@@ -43,8 +51,8 @@ The [NERD Tree] allows you to explore your filesystem and to open files and dire
 [Powerline]:https://github.com/Lokaltog/vim-powerline
 [JSON for VIM]:https://github.com/elzr/vim-json
 
-## TODO List
+## Road Map
 
-* Bootstrap shell script
+* Bootstrap script
 * Full README markdown
 * OSX configuration 
