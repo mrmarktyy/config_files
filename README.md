@@ -6,12 +6,14 @@ Git
 
 **Alias**
 
+```
 lg  = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative --color                           
 c   = commit -am 
 co  = checkout
 s   = status
 df  = diff --color --abbrev         
 last= diff --color --abbrev @{1}.. 
+```
 
 VIM
 ---
