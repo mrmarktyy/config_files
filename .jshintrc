@@ -28,5 +28,6 @@
     "wsh": true,
     "sub": true,
     "smarttabs": true,
-    "expr": true
+    "expr": true,
+    "eqnull": true
 }
