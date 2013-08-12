@@ -8,6 +8,7 @@
     s = status
     df = diff --color --abbrev #--color-words
     last = diff --color --abbrev @{1}..
+    show = show --color
 [push]
     default = simple 
 [merge]
