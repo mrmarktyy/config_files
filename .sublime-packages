@@ -1,18 +1,23 @@
 {
     "auto_upgrade_last_run": null,
-        "installed_packages":
-        [
-            "ColdFusion",
-            "Dayle Rees Color Schemes",
-            "Dotfiles Syntax Highlighting",
-            "Jasmine",
-            "JsFormat",
-            "Package Control",
-            "SCSS",
-            "SideBarEnhancements",
-            "SublimeCodeIntel",
-            "SublimeLinter",
-            "Tag",
-            "Theme - Phoenix"
-        ]
+    "installed_packages":
+    [
+        "ColdFusion",
+        "Dayle Rees Color Schemes",
+        "Dotfiles Syntax Highlighting",
+        "GitHubinator",
+        "GotoLastEdit",
+        "Jasmine",
+        "JsFormat",
+        "LiveStyle",
+        "Package Control",
+        "Pretty JSON",
+        "Sass",
+        "SCSS",
+        "SideBarEnhancements",
+        "SublimeCodeIntel",
+        "SublimeLinter",
+        "Tag",
+        "Theme - Phoenix"
+    ]
 }

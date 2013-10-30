@@ -6,6 +6,12 @@
     // SideBarEnhancements
     {   "keys": ["ctrl+t"], "command": "side_bar_new_file2" },
     {   "keys": ["f2"], "command": "side_bar_rename" },
-    {   "keys": ["ctrl+alt+f"], "command": "side_bar_find_files_path_containing" }
-]
 
+    {
+        "keys": ["ctrl+alt+f"], "command": "js_format",
+        "context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}]
+    },
+
+    // Go To Last Edit
+    {   "keys": ["ctrl+q"], "command": "last_edit_line"  }
+]

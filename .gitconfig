@@ -6,7 +6,7 @@
     c = commit -am
     co = checkout
     s = status
-    df = diff --color --abbrev #--color-words
+    df = diff --color --abbrev
     last = diff --color --abbrev @{1}..
     show = show --color
 [push]
