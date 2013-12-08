@@ -51,9 +51,7 @@ set esckeys
 " Allow backspace in insert mode
 set backspace=indent,eol,start
 
-" Don't add empty newlines at the end of files
 set binary
-set noeol
 
 " Set to auto read when a file is changed from the outside
 set autoread
