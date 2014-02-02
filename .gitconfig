@@ -12,6 +12,8 @@
     default = simple 
 [merge]
     tool = opendiff
+[helper]
+    springcleaning = "for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'"
 [core]
     editor = vim
     excludesfile = ~/.gitignore
