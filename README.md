@@ -15,6 +15,11 @@ df  = diff --color --abbrev
 last= diff --color --abbrev @{1}.. 
 ```
 
+Sublime Text
+---
+
+cp *.tmTheme ~/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/
+
 VIM
 ---
 
