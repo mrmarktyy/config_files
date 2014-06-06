@@ -18,7 +18,8 @@ last= diff --color --abbrev @{1}..
 Sublime Text
 ---
 
-cp *.tmTheme ~/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/
+cp sublime/themes/DesertEx.tmTheme ~/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/
+cp sublime/themes/solarized-darclua.tmTheme ~/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/
 
 VIM
 ---
