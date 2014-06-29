@@ -17,3 +17,8 @@ else
     alias ls='ls --color=auto'
 fi
 alias l='ls -la'
+
+# Vagrant
+alias vgs='cd ~/projects/salt-developer; vagrant ssh'
+alias vgu='cd ~/projects/salt-developer; vagrant up'
+alias vgh='cd ~/projects/salt-developer; vagrant halt'
