@@ -1,25 +1,29 @@
 {
-    "auto_complete_commit_on_tab": true,
-    "detect_indentation": false,
-    "ensure_newline_at_eof_on_save": true,
-    "find_selected_text": true,
-    "folder_exclude_patterns":
-    [
-        ".svn",
-        ".git",
-        ".hg",
-        "CVS",
-        "WEB-INF",
-        "errordump"
-    ],
-    "font_size": 13.0,
-    "highlight_line": false,
-    "highlight_modified_tabs": true,
-    "open_files_in_new_window": false,
-    "show_full_path": true,
-    "theme": "Phoenix Dark.sublime-theme",
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "use_tab_stops": true
+	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/Color Scheme - Default/DesertEx.tmTheme",
+	"detect_indentation": false,
+	"ensure_newline_at_eof_on_save": true,
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"WEB-INF",
+		"errordump"
+	],
+	"font_face": "Source Code Pro",
+	"font_size": 13.0,
+	"highlight_line": false,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"open_files_in_new_window": false,
+	"show_full_path": true,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
-
