@@ -28,6 +28,7 @@ Bundle 'scrooloose/nerdtree.git'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'elzr/vim-json'
+Bundle 'tpope/vim-fugitive'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -76,8 +77,11 @@ set wildmenu
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
 
-"Always show current position
+" Always show current position
 set ruler
+
+" Display incomplete commands
+set showcmd
 
 " Height of the command bar
 set cmdheight=2
@@ -124,7 +128,10 @@ set number
 set smartindent
 
 " HighLight current line
+"au WinLeave * set nocursorline nocursorcolumn
+"au WinEnter * set cursorline cursorcolun
 set cursorline
+
 
 " Enable mouse in all modes
 set mouse=a
@@ -145,8 +152,11 @@ set scrolloff=3
 syntax enable
 
 set t_Co=256
-colorscheme badwolf
+" colorscheme badwolf
+colorscheme molokai
 set bg=dark
+highlight NonText guibg=#060606
+highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -155,6 +165,11 @@ if has("gui_running")
     set t_Co=256
     set guitablabel=%M\ %t
 endif
+
+" Set syntax highlighting for specific file types
+autocmd BufRead,BufNewFile Appraisals set filetype=ruby
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+" autocmd Syntax javascript set syntax=jquery
 
 " Use UTF-8 without BOM
 set encoding=utf8 nobomb
@@ -200,8 +215,9 @@ set wrap
 set laststatus=2
 
 " Format the status line
+" vim-fugitive GIT wrapper 
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
-
+set statusline+=%{fugitive#statusline()} "  Git Hotness
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
@@ -220,6 +236,12 @@ nmap <C-d> :m+<CR>
 " NERDTree Bindings
 nmap <F4> :NERDTreeToggle<CR><CR>
 let NERDTreeShowHidden=1
+let NERDChristmasTree=0
+let NERDTreeWinSize=35
+let NERDTreeChDirMode=2
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
+let NERDTreeShowBookmarks=1
+let NERDTreeWinPos="left"
 
 " close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
