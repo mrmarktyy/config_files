@@ -22,3 +22,7 @@ alias l='ls -la'
 alias vgs='cd ~/salt-developer; vagrant ssh'
 alias vgu='cd ~/salt-developer; vagrant up'
 alias vgh='cd ~/salt-developer; vagrant halt'
+
+# Forever
+alias fl='sudo forever list'
+alias fs='sudo forever start index.js'
