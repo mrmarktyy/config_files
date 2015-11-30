@@ -18,3 +18,5 @@ Thumbs.db
 # Sublime Text
 *.sublime-workspace
 *.sublime-project
+
+.vim/bundle
