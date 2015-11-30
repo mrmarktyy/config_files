@@ -152,9 +152,8 @@ set scrolloff=3
 syntax enable
 
 set t_Co=256
-" colorscheme badwolf
+set background=dark
 colorscheme molokai
-set bg=dark
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 

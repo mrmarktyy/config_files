@@ -3,28 +3,49 @@
 set -e
 
 DOTFILES_ROOT="$HOME/dotfiles"
+VUNDLE="$DOTFILES_ROOT/.vim/bundle/vundle"
 cd "$HOME"
+
+info () {
+  printf "\r  [\033[00;34mINFO\033[0m ] $1\n"
+}
+
+success () {
+  printf "\r\033[2K  [\033[00;32mOK\033[0m ] $1\n"
+}
+
+fail () {
+  printf "\r\033[2K  [\033[0;31mFAIL\033[0m] $1\n"
+  echo ''
+  exit 1
+}
 
 ln_s () {
   ln -sfn "$DOTFILES_ROOT/$1" "$2"
 }
 
-echo "Configuring Git"
+info "Configuring Git"
 ln_s .gitconfig .
 ln_s .gitignore .
 ln_s .git-completion .
+success "Git Done"
 
-echo "Configuring Vim"
+info "Configuring Vim"
 ln_s .vimrc .
 ln_s .vim .
-git clone https://github.com/gmarik/vundle.git "$DOTFILES_ROOT/.vim/bundle/vundle"
+if [ ! -d "$VUNDLE" ]; then
+  git clone https://github.com/gmarik/vundle.git "$DOTFILES_ROOT/.vim/bundle/vundle"
+fi
+success "Vim Done"
 
-echo "Configuring Bash"
+info "Configuring Bash"
 ln_s .aliases .
 ln_s .bash_profile .
 ln_s .bash_prompt .
 ln_s .commonrc .
 ln_s .functions .
+success "Bash Done"
 
-echo "Reloading the shell"
+info "Reloading the shell"
   exec $SHELL -l
+
