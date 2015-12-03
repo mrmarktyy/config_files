@@ -29,6 +29,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'elzr/vim-json'
 Bundle 'tpope/vim-fugitive'
+Bundle 'fatih/vim-go'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
