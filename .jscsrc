@@ -1,0 +1,27 @@
+{
+  "preset": "google",
+  "validateQuoteMarks": false,
+  "maximumLineLength": 999,
+
+  "disallowMultipleSpaces": true,
+  "disallowSpacesInFunction": false,
+  "disallowMultipleVarDecl": false,
+  "disallowNewlineBeforeBlockStatements": true,
+  "disallowSpaceBeforeKeywords": false,
+  "disallowSpaceAfterKeywords": false,
+  "disallowTrailingWhitespace": true,
+
+  "requireSpaceAfterKeywords": true,
+  "requireSpacesInFunction": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "requireSpacesInNamedFunctionExpression": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  }
+  "requireCamelCaseOrUpperCaseIdentifiers": false,
+  "requireSpaceAfterKeywords": true,
+  "requireSpaceBeforeKeywords": true,
+  "requireCurlyBraces": true
+}
