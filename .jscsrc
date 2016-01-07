@@ -1,27 +1,58 @@
 {
-  "preset": "google",
+  "validateIndentation": 2,
   "validateQuoteMarks": false,
+  "validateParameterSeparator": ", ",
   "maximumLineLength": 999,
 
-  "disallowMultipleSpaces": true,
-  "disallowSpacesInFunction": false,
-  "disallowMultipleVarDecl": false,
-  "disallowNewlineBeforeBlockStatements": true,
-  "disallowSpaceBeforeKeywords": false,
-  "disallowSpaceAfterKeywords": false,
+  "disallowMultipleLineStrings": false,
+  "disallowMixedSpacesAndTabs": true,
   "disallowTrailingWhitespace": true,
+  "disallowSpaceAfterPrefixUnaryOperators": true,
+  "disallowMultipleVarDecl": false,
+  "disallowKeywordsOnNewLine": ["else"],
+  "disallowMultipleSpaces": true,
 
+  "requireCurlyBraces": true,
   "requireSpaceAfterKeywords": true,
-  "requireSpacesInFunction": {
+  "requireSpaceBeforeBinaryOperators": true,
+  "requireSpaceAfterBinaryOperators": true,
+  "requireSpacesInConditionalExpression": true,
+  "requireSpaceBeforeBlockStatements": true,
+  "requireSpacesInForStatement": true,
+  "requireLineFeedAtFileEnd": true,
+  "requireSpacesInFunctionExpression": {
     "beforeOpeningRoundBrace": true,
     "beforeOpeningCurlyBrace": true
   },
-  "requireSpacesInNamedFunctionExpression": {
-    "beforeOpeningRoundBrace": true,
-    "beforeOpeningCurlyBrace": true
-  }
+  "requireOperatorBeforeLineBreak": true,
   "requireCamelCaseOrUpperCaseIdentifiers": false,
-  "requireSpaceAfterKeywords": true,
   "requireSpaceBeforeKeywords": true,
-  "requireCurlyBraces": true
+
+  "disallowSpacesInsideObjectBrackets": "nested",
+  "disallowSpacesInsideArrayBrackets": "nested",
+  "disallowSpacesInsideParentheses": true,
+  "disallowMultipleLineBreaks": true,
+  "disallowNewlineBeforeBlockStatements": true,
+  "disallowKeywords": ["with"],
+
+  "disallowSpacesInCallExpression": true,
+  "disallowSpaceAfterObjectKeys": true,
+
+  "requireSpaceBeforeObjectValues": true,
+  "requireCapitalizedConstructors": true,
+  "requireDotNotation": false,
+  "requireSemicolons": true,
+
+  "jsDoc": {
+    "checkAnnotations": "closurecompiler",
+    "checkParamNames": true,
+    "requireParamTypes": true,
+    "checkRedundantParams": true,
+    "checkReturnTypes": true,
+    "checkRedundantReturns": true,
+    "requireReturnTypes": true,
+    "checkTypes": true,
+    "checkRedundantAccess": true,
+    "requireNewlineAfterDescription": true
+  }
 }
