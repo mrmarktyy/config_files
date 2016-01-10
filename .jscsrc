@@ -12,7 +12,15 @@
   "disallowKeywordsOnNewLine": ["else"],
   "disallowMultipleSpaces": true,
 
-  "requireCurlyBraces": true,
+  "requireCurlyBraces": [
+    "if",
+    "else",
+    "for",
+    "while",
+    "do",
+    "try",
+    "catch"
+  ],
   "requireSpaceAfterKeywords": true,
   "requireSpaceBeforeBinaryOperators": true,
   "requireSpaceAfterBinaryOperators": true,
@@ -26,7 +34,11 @@
   },
   "requireOperatorBeforeLineBreak": true,
   "requireCamelCaseOrUpperCaseIdentifiers": false,
-  "requireSpaceBeforeKeywords": true,
+  "requireSpaceBeforeKeywords": [
+    "else",
+    "while",
+    "catch"
+  ],
 
   "disallowSpacesInsideObjectBrackets": "nested",
   "disallowSpacesInsideArrayBrackets": "nested",

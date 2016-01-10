@@ -17,6 +17,7 @@ else
     alias ls='ls --color=auto'
 fi
 alias l='ls -la'
+alias nl='nload -n'
 
 # Vagrant
 alias vgs='cd ~/salt-developer; vagrant ssh'
