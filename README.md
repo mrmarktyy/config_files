@@ -15,6 +15,10 @@ df  = diff --color --abbrev
 last= diff --color --abbrev @{1}.. 
 ```
 
+**diff-so-fancy**
+
+https://github.com/so-fancy/diff-so-fancy
+
 Sublime Text
 ---
 
