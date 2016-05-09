@@ -9,7 +9,7 @@ export HISTFILESIZE=10000
 export HISTSIZE=10000
 
 # User specific environment and startup programs
-PATH=$PATH:$HOME/bin
+PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
 export PATH
 
 #color schema for MacOSX terminal
@@ -20,3 +20,4 @@ export CLICOLOR=1
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
