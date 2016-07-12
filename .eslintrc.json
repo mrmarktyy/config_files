@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "amd": true
+  },
+  "extends": ["google", "angular"],
+  "rules": {
+    "require-jsdoc": [
+      "off", { "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true
+      }
+    }],
+    "max-len": [
+      "warn", 120
+    ],
+    "no-debugger": "off",
+    "one-var": "off",
+    "no-implicit-coercion": "off",
+    "camelcase": "off",
+    "no-mixed-spaces-and-tabs": "error",
+    "quotes": [
+      "error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }
+    ],
+    "no-multi-spaces": [
+      "error", { "exceptions": { "VariableDeclarator": true, "ImportDeclaration": true } }
+    ],
+    "angular/angularelement": 0,
+    "angular/di": [
+      "error", "array"
+    ]
+  }
+}

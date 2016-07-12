@@ -2,24 +2,28 @@
 	name = Mark Zhou
 	email = mrmarktyy@gmail.com
 [alias]
-    lg = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative --color
-    c = commit -am
-    co = checkout
-    s = status
-    df = diff --color --abbrev
-    last = diff --color --abbrev @{1}..
-    springcleaning = "for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'"
+  lg = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative --color
+  c = commit -am
+  co = checkout
+  s = status
+  df = diff --color --abbrev
+  last = diff --color --abbrev @{1}..
+  rc = rebase --continue
+  ss = stash
+  sl = stash list
+  sd = stash drop
+  springcleaning = "for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'"
 [push]
-    default = simple 
+  default = simple 
 [merge]
-    tool = opendiff
+  tool = opendiff
 [help]
-    autocorrect = 1
+  autocorrect = 1
 [core]
-    editor = vim
-    excludesfile = ~/.gitignore
-    # insanely beautiful diffs
-    pager = diff-highlight | diff-so-fancy | less -r
+  editor = vim
+	excludesfile = /Users/markzhou/.gitignore
+  # insanely beautiful diffs
+  pager = diff-highlight | diff-so-fancy | less -r
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -50,3 +54,5 @@
   added = yellow
   changed = green
   untracked = cyan
+[commit]
+	template = /Users/markzhou/.stCommitMsg

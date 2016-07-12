@@ -31,8 +31,7 @@ ln_s .git-completion .
 success "Git Done"
 
 info "Configuring rc"
-ln_s .jshintrc .
-ln_s .jscsrc .
+ln_s .eslintrc.json .
 success "rc done."
 
 info "Configuring Vim"
@@ -51,6 +50,10 @@ ln_s .commonrc .
 ln_s .functions .
 success "Bash Done"
 
+info "Install diff-so-fancy"
+npm install -g diff-so-fancy
+success "diff-so-fancy Done"
+
 info "Reloading the shell"
-  exec $SHELL -l
+exec $SHELL -l
 
