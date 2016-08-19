@@ -51,7 +51,7 @@ ln_s .functions .
 success "Bash Done"
 
 info "Install diff-so-fancy"
-npm install -g diff-so-fancy
+sudo npm install -g diff-so-fancy
 success "diff-so-fancy Done"
 
 info "Reloading the shell"
