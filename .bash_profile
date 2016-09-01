@@ -9,7 +9,8 @@ export HISTFILESIZE=10000
 export HISTSIZE=10000
 
 # User specific environment and startup programs
-PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export GOPATH=$HOME/go
+PATH=$GOPATH/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
 export PATH
 
 #color schema for MacOSX terminal
