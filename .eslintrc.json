@@ -4,7 +4,7 @@
     "es6": true,
     "amd": true
   },
-  "extends": ["google", "angular"],
+  "extends": ["google"],
   "rules": {
     "require-jsdoc": [
       "off", { "require": {
@@ -26,10 +26,6 @@
     ],
     "no-multi-spaces": [
       "error", { "exceptions": { "VariableDeclarator": true, "ImportDeclaration": true } }
-    ],
-    "angular/angularelement": 0,
-    "angular/di": [
-      "error", "array"
     ]
   }
 }
