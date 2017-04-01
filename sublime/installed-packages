@@ -1,21 +1,25 @@
 {
-	"installed_packages":
-	[
-		"Dayle Rees Color Schemes",
-		"Dotfiles Syntax Highlighting",
-		"GitHubinator",
-		"GotoLastEdit",
-		"JsFormat",
-		"Package Control",
-		"Pretty JSON",
-		"Pretty YAML",
-		"SaltStack-related syntax highlighting and snippets",
-		"Sass",
-		"SideBarEnhancements",
-		"SublimeCodeIntel",
-		"SublimeLinter",
-		"Theme - Phoenix",
-		"Theme - Soda",
-		"Twig"
-	]
+  "installed_packages":
+  [
+    "Babel",
+    "Color Highlighter",
+    "CSS3",
+    "Dotfiles Syntax Highlighting",
+    "GitHubinator",
+    "GoToLastEdit",
+    "JavaScriptNext - ES6 Syntax",
+    "JsFormat",
+    "Material Theme",
+    "Package Control",
+    "Pretty JSON",
+    "Pretty YAML",
+    "React ES6 Snippets",
+    "SaltStack-related syntax highlighting and snippets",
+    "Sass",
+    "SideBarEnhancements",
+    "SublimeCodeIntel",
+    "SublimeLinter",
+    "SublimeLinter-contrib-eslint",
+    "Themr"
+  ]
 }
