@@ -1,6 +1,6 @@
 [user]
-	name = Mark Zhou
-	email = mrmarktyy@gmail.com
+  name = Mark Zhou
+  email = mrmarktyy@gmail.com
 [alias]
   lg = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative --color
   c = commit -am
@@ -8,20 +8,20 @@
   s = status
   df = diff --color --abbrev
   last = diff --color --abbrev @{1}..
-  rc = rebase --continue
   ss = stash
   sl = stash list
   sd = stash drop
+  tl = tag -l --format='%(refname:short) %(taggerdate)' --sort=-taggerdate
   springcleaning = "for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'"
 [push]
-  default = simple 
+  default = simple
 [merge]
   tool = opendiff
 [help]
   autocorrect = 1
 [core]
   editor = vim
-	excludesfile = /Users/markzhou/.gitignore
+  excludesfile = /Users/markzhou/.gitignore
   # insanely beautiful diffs
   pager = diff-highlight | diff-so-fancy | less -r
 [difftool "sourcetree"]
@@ -42,10 +42,10 @@
   new = green bold
   whitespace = red reverse
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -54,5 +54,3 @@
   added = yellow
   changed = green
   untracked = cyan
-[commit]
-	template = /Users/markzhou/.stCommitMsg

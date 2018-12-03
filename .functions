@@ -21,3 +21,4 @@ function fail {
   echo ''
   exit 1
 }
+
