@@ -4,14 +4,13 @@
 [alias]
   lg = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative --color
   c = commit -am
+  pr = pull --rebase
   co = checkout
   s = status
   df = diff --color --abbrev
   last = diff --color --abbrev @{1}..
-  ss = stash
-  sl = stash list
-  sd = stash drop
   tl = tag -l --format='%(refname:short) %(taggerdate)' --sort=-taggerdate
+  rc = rebase --continue
   springcleaning = "for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'"
 [push]
   default = simple
