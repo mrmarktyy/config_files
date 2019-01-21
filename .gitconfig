@@ -22,7 +22,7 @@
   editor = vim
   excludesfile = /Users/markzhou/.gitignore
   # insanely beautiful diffs
-  pager = diff-highlight | diff-so-fancy | less -r
+  pager = diff-so-fancy | less -r
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
